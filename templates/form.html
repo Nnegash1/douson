@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dowson queue</title>
+	<!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Font-->
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+	<!-- datepicker -->
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<!-- Main Style Css -->
+    <link href="static/css/styles.css" rel="stylesheet" />
+</head>
+<body class="masthead justify-content: ">
+	<div class="container page-content bg-primary justify-content: center">
+		<div class="col-lg-4 mx-auto bg-light">
+			<form class="form-detail" action="#" method="post" id="myform">
+				<h2>DOWSON</h2>
+				<p class="text">Schedule</p>
+				<div class="form-group">
+					<div class="form-row form-row-1">
+						<label for="full-name">FULL NAME::</label>
+						<input type="text" name="full-name" id="full-name" class="input-text" required>
+					</div>
+					<div class="form-row form-row-1">
+						<label for="your-email">YOUR EMAIL:</label>
+						<input type="text" name="your-email" id="your-email" class="input-text" required>
+					</div>
+				</div>
+				<div class="form-group form-group-1">
+					<div class="form-row form-row-2">
+						<label for="phone">Contact No:</label>
+            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="contact_no" placeholder="(251)" class="form-control" type="text">
+					</div>
+					<div class="form-row form-row-3">
+						<label for="date">DATE:</label>
+						<input type="text" name="date" class="date" id="date" placeholder="8/9/2018">
+					</div>
+					<div class="form-row form-row-4">
+						<label for="ticket">Service TYPE:</label>
+						<select name="position" id="ticket" class="input-text" >
+						    <option value="vip">FULL</option>
+						    <option value="basic">Basic</option>
+						    <option value="normal">Normal</option>
+						</select>
+						<span class="select-btn">
+						  	<i class="zmdi zmdi-chevron-down"></i>
+						</span>
+					</div>
+				</div>
+				<div class="form-checkbox">
+					<label class="container"><p>By booking, you agree to the <a href="#" class="text">Terms of Service</a></p>
+					  	<input type="checkbox" name="checkbox">
+					  	<span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="form-row-last">
+					<input type="submit" name="register" class="register" value="BUY NOW">
+				</div>
+			</form>
+			<div class="form-right">
+				<div class="form-images-1">
+					<img src="../static/img/favicon.ico" alt="form-v3-1">
+				</div>
+				<div class="form-icon-1">
+					<a href="#"><i class="zmdi zmdi-chevron-left"></i></a>
+				</div>
+				<div class="form-icon-2">
+					<a href="#"><i class="zmdi zmdi-chevron-right"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	<script src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+		$( "#date" ).datepicker({
+	        dateFormat: "MM - DD - yy",
+	        showOn: "both",
+	        buttonText : '<i class="zmdi zmdi-calendar-alt"></i>',
+	    });
+	</script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
