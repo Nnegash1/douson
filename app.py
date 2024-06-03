@@ -27,6 +27,8 @@ def more():
 #     form = LoginForm()
 #     return render_template("Login.html", title='Login', form=form)
 
-if __name__== "__main__":
-    from waitress import serve
-    serv
+# if __name__== "__main__":
+#     from waitress import serve
+#     serve(app, host="0.0.0.0", port=8080)
+#     # app.run()
+#     #db.create_all()
