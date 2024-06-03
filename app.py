@@ -13,9 +13,9 @@ def homepage():
 def more():
     return render_template("more.html")
 
-@app.route("/form")
-def form():
-    return render_template("form.html")
+# @app.route("/form")
+# def form():
+#     return render_template("form.html")
 
 # @app.route("/register")
 # def RegistrationForm():
